@@ -1,0 +1,810 @@
+:root{
+
+    --bg:#fcfaf5;
+    --card:#ffffff;
+
+    --green:#9fc78f;
+    --green-light:#eaf4e6;
+
+    --orange:#ffc96b;
+    --apple:#ff9b8d;
+
+    --brown:#5b4636;
+
+    --text:#463b34;
+    --sub:#7b6f67;
+
+    --border:#ece7de;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.05);
+
+    --radius:28px;
+
+    --transition:.25s;
+
+    --max-width:1100px;
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:
+
+    "Segoe UI",
+
+    "Hiragino Sans",
+
+    "Yu Gothic",
+
+    sans-serif;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+button{
+
+    font:inherit;
+
+}
+
+/* ------------------ Header ------------------ */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    backdrop-filter:blur(12px);
+
+    background:
+
+    rgba(252,250,245,.82);
+
+    border-bottom:
+
+    1px solid var(--border);
+
+}
+
+.nav{
+
+    max-width:var(--max-width);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:
+
+    18px 24px;
+
+}
+
+.logo{
+
+    font-size:1.7rem;
+
+    font-weight:800;
+
+    transition:var(--transition);
+
+}
+
+.logo:hover{
+
+    transform:scale(1.03);
+
+}
+
+.menu{
+
+    display:flex;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+
+.menu a{
+
+    padding:
+
+    8px 16px;
+
+    border-radius:999px;
+
+    transition:var(--transition);
+
+}
+
+.menu a:hover{
+
+    background:
+
+    var(--green-light);
+
+}
+
+/* ------------------ Hero ------------------ */
+
+.hero{
+
+    max-width:var(--max-width);
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:
+
+    70px 24px 45px;
+
+}
+
+.tree{
+
+    font-size:82px;
+
+    display:inline-block;
+
+    animation:
+
+    sway 6s ease-in-out infinite;
+
+    transform-origin:
+
+    bottom center;
+
+}
+
+@keyframes sway{
+
+    0%,100%{
+
+        transform:
+
+        rotate(-4deg);
+
+    }
+
+    50%{
+
+        transform:
+
+        rotate(4deg);
+
+    }
+
+}
+
+.hero h1{
+
+    margin-top:15px;
+
+    font-size:3rem;
+
+    color:var(--brown);
+
+}
+
+.hero p{
+
+    margin-top:14px;
+
+    color:var(--sub);
+
+    font-size:1.05rem;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    margin-top:26px;
+
+    padding:
+
+    10px 18px;
+
+    background:
+
+    var(--green-light);
+
+    color:
+
+    var(--brown);
+
+    border-radius:999px;
+
+    font-size:.95rem;
+
+}
+
+/* ------------------ Layout ------------------ */
+
+.container{
+
+    max-width:var(--max-width);
+
+    margin:auto;
+
+    padding:
+
+    0 24px 70px;
+
+}
+
+.loading{
+
+    color:var(--sub);
+
+    opacity:.7;
+
+}
+
+/* ------------------ Notice ------------------ */
+
+.notice{
+
+    background:
+
+    var(--card);
+
+    border-radius:
+
+    var(--radius);
+
+    padding:
+
+    28px;
+
+    border:
+
+    2px solid #f2eee6;
+
+    box-shadow:
+
+    var(--shadow);
+
+}
+
+.notice h2{
+
+    margin-bottom:14px;
+
+    color:
+
+    var(--brown);
+
+}
+
+/* ------------------ Section ------------------ */
+
+.section-title{
+
+    margin:
+
+    45px 0 22px;
+
+    color:
+
+    var(--brown);
+
+    font-size:1.6rem;
+
+}
+
+/* ------------------ Grid ------------------ */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:24px;
+
+}
+
+/* ------------------ Card ------------------ */
+
+.card{
+
+    background:
+
+    var(--card);
+
+    border-radius:
+
+    var(--radius);
+
+    padding:
+
+    30px;
+
+    border:
+
+    2px solid #f2eee6;
+
+    transition:
+
+    .25s;
+
+    text-align:center;
+
+    box-shadow:
+
+    var(--shadow);
+
+}
+
+.card:hover{
+
+    transform:
+
+    translateY(-8px);
+
+    border-color:
+
+    var(--green);
+
+}
+
+.icon{
+
+    width:84px;
+
+    height:84px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:
+
+    var(--green-light);
+
+    font-size:42px;
+
+    transition:.25s;
+
+}
+
+.card:hover .icon{
+
+    transform:
+
+    scale(1.08)
+
+    rotate(4deg);
+
+}
+
+.card h3{
+
+    margin-top:18px;
+
+    color:
+
+    var(--brown);
+
+}
+
+.card p{
+
+    margin-top:10px;
+
+    color:
+
+    var(--sub);
+
+    font-size:.95rem;
+
+}
+
+/* ------------------ Archive ------------------ */
+
+.archive{
+
+    margin-top:55px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    padding:36px;
+
+    border-radius:32px;
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #fff5d9,
+
+    #ffe9b1
+
+    );
+
+    box-shadow:
+
+    var(--shadow);
+
+}
+
+.archive h2{
+
+    color:
+
+    var(--brown);
+
+}
+
+.archive p{
+
+    margin-top:8px;
+
+    color:
+
+    var(--sub);
+
+}
+
+.archiveButton{
+
+    display:inline-block;
+
+    padding:
+
+    15px 30px;
+
+    background:white;
+
+    border-radius:18px;
+
+    font-weight:bold;
+
+    transition:.2s;
+
+    box-shadow:
+
+    0 6px 16px
+
+    rgba(0,0,0,.08);
+
+}
+
+.archiveButton:hover{
+
+    transform:
+
+    translateY(-3px);
+
+}
+
+/* ------------------ Recent ------------------ */
+
+.recent{
+
+    margin-top:50px;
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:30px;
+
+    border:2px solid #f2eee6;
+
+    box-shadow:
+
+    var(--shadow);
+
+}
+
+.recent h2{
+
+    color:var(--brown);
+
+}
+
+.item{
+
+    display:flex;
+
+    gap:14px;
+
+    align-items:flex-start;
+
+    padding:16px 0;
+
+    border-bottom:
+
+    1px dashed #ece7de;
+
+}
+
+.item:last-child{
+
+    border:none;
+
+}
+
+.itemIcon{
+
+    font-size:1.4rem;
+
+}
+
+.itemTitle{
+
+    font-weight:700;
+
+}
+
+.itemDate{
+
+    font-size:.82rem;
+
+    color:var(--sub);
+
+}
+
+/* ------------------ Profile ------------------ */
+
+.profile{
+
+    margin-top:50px;
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:30px;
+
+    border:2px solid #f2eee6;
+
+    box-shadow:var(--shadow);
+
+}
+
+.profile h2{
+
+    margin-bottom:15px;
+
+    color:var(--brown);
+
+}
+
+.profile p{
+
+    margin-top:12px;
+
+}
+
+/* ------------------ Footer ------------------ */
+
+footer{
+
+    margin-top:70px;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:var(--sub);
+
+}
+
+/* ------------------ Animation ------------------ */
+
+.fadeIn{
+
+    animation:
+
+    fadeIn .6s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+        translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+    }
+
+}
+
+/* ------------------ Scrollbar ------------------ */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f5f2ec;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d7d0c5;
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#bfb6a7;
+
+}
+
+/* ------------------ Responsive ------------------ */
+
+@media(max-width:900px){
+
+    .hero{
+
+        padding:
+
+        50px 20px 30px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .archive{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .nav{
+
+        flex-direction:column;
+
+        gap:18px;
+
+    }
+
+    .menu{
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .tree{
+
+        font-size:68px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .notice,
+
+    .recent,
+
+    .profile{
+
+        padding:22px;
+
+    }
+
+    .archive{
+
+        padding:28px;
+
+    }
+
+    .card{
+
+        padding:26px;
+
+    }
+
+}
