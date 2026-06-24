@@ -96,6 +96,14 @@ class TsubunomiAPI{
 
     }
 
+    async getBlogs() {
+
+    return this.request(
+        "?action=blog"
+    );
+
+}
+
     async getWorks(category=""){
 
         return await this.request(
