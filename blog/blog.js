@@ -51,41 +51,42 @@ async function loadBlogs() {
 
 }
 
-function createBlogCard(item) {
-
-    const date =
-    formatDate(item.date);
+function createBlogCard(item){
 
     return `
 
     <a
-        class="card"
+        class="blogItem"
         href="${item.link}"
     >
 
-        <div class="icon">
+        <div class="blogIcon">
 
             ${item.icon}
 
         </div>
 
-        <h3>
+        <div class="blogContent">
 
-            ${item.title}
+            <h3>
 
-        </h3>
+                ${item.title}
 
-        <p>
+            </h3>
 
-            ${item.description}
+            <p>
 
-        </p>
+                ${item.description}
 
-        <small>
+            </p>
 
-            ${date}
+            <small>
 
-        </small>
+                ${item.date}
+
+            </small>
+
+        </div>
 
     </a>
 
