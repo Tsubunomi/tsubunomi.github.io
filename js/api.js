@@ -96,10 +96,10 @@ class TsubunomiAPI{
 
     }
 
-    async getBlogs() {
+async getBlogs(){
 
-    return this.request(
-        "?action=blog"
+    return await this.request(
+        "blog"
     );
 
 }
