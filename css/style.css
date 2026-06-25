@@ -866,3 +866,123 @@ footer{
     opacity:0.6;
 
 }
+
+/* ==========================
+   Blog Article
+========================== */
+
+.blogArticle{
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    background:white;
+
+    border-radius:28px;
+
+    border:2px solid #f2eee6;
+
+    box-shadow:var(--shadow);
+
+}
+
+.blogHeader{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    padding-bottom:24px;
+
+    border-bottom:1px dashed var(--border);
+
+}
+
+.blogHeader .blogIcon{
+
+    font-size:4rem;
+
+    margin-bottom:12px;
+
+}
+
+.blogHeader h1{
+
+    margin:0;
+
+    color:var(--brown);
+
+}
+
+.blogHeader p{
+
+    margin-top:12px;
+
+    color:var(--sub);
+
+}
+
+.blogContent{
+
+    line-height:2;
+
+}
+
+.blogContent h1{
+
+    margin-top:40px;
+
+    margin-bottom:16px;
+
+    color:var(--brown);
+
+}
+
+.blogContent h2{
+
+    margin-top:32px;
+
+    margin-bottom:12px;
+
+    color:var(--brown);
+
+}
+
+.blogContent p{
+
+    margin:16px 0;
+
+}
+
+.blogContent img{
+
+    display:block;
+
+    margin:24px auto;
+
+    border-radius:20px;
+
+    max-width:100%;
+
+}
+
+.blogContent video{
+
+    width:100%;
+
+    border-radius:20px;
+
+    margin:24px 0;
+
+}
+
+.blogContent audio{
+
+    width:100%;
+
+    margin:24px 0;
+
+}
